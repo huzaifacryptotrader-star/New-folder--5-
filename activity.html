@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Doctor Appointment</h1>
-    <p>Welcome to the doctor appointment scheduling page. Please fill out the form below to book your appointment.</p>
+    <h1>Book  Donation</h1>
+    <p>Welcome to the book donation page. Please fill out the form below to donate your books.</p>
     <hr>
    
     <form>
         <fieldset>
-            <legend>Appointment Details</legend>
+            <legend>Donation Details</legend>
         <label for="name">Full Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
 
@@ -22,8 +22,8 @@
         <label for="date">Preferred Date:</label><br>
         <input type="date" id="date" name="date" required><br><br>
 
-        <label for="time">Preferred Time:</label><br>
-        <input type="time" id="time" name="time" required><br><br>
+        <label for="password">Preferred password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
         
         <label for="phone number">Phone Number:</label><br>
         <input type="tel" id="phone number" name="phone number" required><br><br>
@@ -34,13 +34,30 @@
 <br>
 
 <fieldset>
-    <legend>Doctor Information</legend>
-    <label for="doctor">Preferred Doctor:</label><br>
-    <select id="doctor" name="doctor" >
-        <option value="">Select a doctor</option>
-        <option value="dr_smith">Dr. Smith</option>
-        <option value="dr_jones">Dr. Jones</option>
+    <legend>Book Information</legend>
+    <label for="book-title">Book Title:</label><br>
+    <input type="text" id="book-title" name="book-title" required><br><br>
+
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author" required><br><br>
+
+    <label for="condition">Condition:</label><br>
+    <select id="condition" name="condition">
+        <option value="">Select condition</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+        <option value="poor">Poor</option>
+    </select><br><br>
+
+
+<br>
+<label for="donor">Select a Doctor:</label><br>
+    <select id="donor" name="donor"><address>select a doctor</address>
         <option value="dr_brown">Dr. Brown</option>
+        <option value="dr_jones">Dr. Jones</option>
+        <option value="dr_miller">Dr. Miller</option>
+    
     </select><br><br>
 
 
@@ -52,9 +69,9 @@
     <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
 
    
-        <legend>Submit Your Appointment</legend>
-        <input type="radio" id="confirm" name="confirm" value="confirm" required> <label for="confirm">Confirm Appointment</label><br>
-        <input type="radio" id="cancel" name="confirm" value="cancel" required> <label for="cancel">Cancel Appointment</label><br>
+        <legend>Submit Your Book Donation</legend>
+        <input type="radio" id="confirm" name="confirm" value="confirm" required> <label for="confirm">Confirm Donation</label><br>
+        <input type="radio" id="cancel" name="confirm" value="cancel" required> <label for="cancel">Cancel Donation</label><br>
 
         <br>
 
